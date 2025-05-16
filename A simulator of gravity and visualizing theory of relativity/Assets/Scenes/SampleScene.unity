@@ -394,6 +394,7 @@ GameObject:
   - component: {fileID: 614301855}
   - component: {fileID: 614301854}
   - component: {fileID: 614301853}
+  - component: {fileID: 614301856}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -487,6 +488,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 614301851}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &614301856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614301851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a2c2530a8b508649872da48e285b049, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selfRotationSpeed: 22.36
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1324,6 +1338,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1221429099}
+  - component: {fileID: 1221429100}
   m_Layer: 0
   m_Name: neptune
   m_TagString: Untagged
@@ -1347,6 +1362,20 @@ Transform:
   - {fileID: 614301852}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1221429100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221429098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a439ed168065a0f43b37b7ac62e616ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbitSpeed: 0.0364
+  orbitAxis: {x: 0, y: 1, z: 0}
 --- !u!1 &1732793151
 GameObject:
   m_ObjectHideFlags: 0
