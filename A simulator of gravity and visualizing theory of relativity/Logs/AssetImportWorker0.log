@@ -263,3 +263,58 @@ Start importing Assets/Textures/venus.jpg using Guid(149be37057a27764485764d8816
  -> (artifact id: '8c6847161a051c88141439b35e2dc08f') in 0.013400 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1454.229479 seconds.
+  path: Assets/Materials/jupiter.mat
+  artifactKey: Guid(0772086f96830614f89debd74e357c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/jupiter.mat using Guid(0772086f96830614f89debd74e357c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '79c7f93f314422e1cbf361b8d9ac4089') in 0.244498 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Materials/venus.mat
+  artifactKey: Guid(a810fe7f6235d834daa1283e0b73008a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/venus.mat using Guid(a810fe7f6235d834daa1283e0b73008a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '2e697a54f78ffd22f7013b0df0d79043') in 0.012254 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Materials/mercury.mat
+  artifactKey: Guid(3f73a727ce81fff4a8b135130184cef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/mercury.mat using Guid(3f73a727ce81fff4a8b135130184cef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'cc410b77573072e6e1fd88cf558cd0c2') in 0.012513 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Materials/saturn.mat
+  artifactKey: Guid(f615f65b0cce75449b56bcee1f61896d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/saturn.mat using Guid(f615f65b0cce75449b56bcee1f61896d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '08ed4071dbef71331e6199b921dacc5b') in 0.012542 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Materials/neptune.mat
+  artifactKey: Guid(4a2e0449b70f67a4fa5c585aa7712e91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/neptune.mat using Guid(4a2e0449b70f67a4fa5c585aa7712e91) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '27ccc4124a3e6a07feb5dac278d84da5') in 0.013767 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
