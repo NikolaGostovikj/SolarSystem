@@ -329,6 +329,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 542388138}
+  - component: {fileID: 542388139}
   m_Layer: 0
   m_Name: jupiter
   m_TagString: Untagged
@@ -352,6 +353,20 @@ Transform:
   - {fileID: 814322849}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &542388139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542388137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a439ed168065a0f43b37b7ac62e616ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbitSpeed: 0.51
+  orbitAxis: {x: 0, y: 1, z: 0}
 --- !u!1 &614301851
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,6 +683,7 @@ GameObject:
   - component: {fileID: 814322852}
   - component: {fileID: 814322851}
   - component: {fileID: 814322850}
+  - component: {fileID: 814322853}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -761,6 +777,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 814322848}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &814322853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814322848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a2c2530a8b508649872da48e285b049, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selfRotationSpeed: 36.36
 --- !u!1 &849502144
 GameObject:
   m_ObjectHideFlags: 0
