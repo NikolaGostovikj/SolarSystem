@@ -1,0 +1,313 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.59f1 (630718f645a5) revision 6489880'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'en' Physical Memory: 7991 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.59f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Users/Boris/Desktop/augmented-reality-project/A simulator of gravity and visualizing theory of relativity
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+60331
+Successfully changed project path to: C:/Users/Boris/Desktop/augmented-reality-project/A simulator of gravity and visualizing theory of relativity
+C:/Users/Boris/Desktop/augmented-reality-project/A simulator of gravity and visualizing theory of relativity
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [17092]  Target information:
+
+Player connection [17092]  * "[IP] 192.168.249.23 [Port] 0 [Flags] 2 [Guid] 1525941918 [EditorId] 1525941918 [Version] 1048832 [Id] WindowsEditor(7,drb0r1s) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [17092] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [17092] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+Refreshing native plugins compatible for Editor in 64.46 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.59f1 (630718f645a5)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.59f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Boris/Desktop/augmented-reality-project/A simulator of gravity and visualizing theory of relativity/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0x9a49)
+    Vendor:   Intel
+    VRAM:     3995 MB
+    Driver:   31.0.101.5522
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.59f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.59f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.59f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56976
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.59f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.59f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.037163 seconds.
+- Loaded All Assemblies, in  1.065 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 836 ms
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.614 seconds
+Domain Reload Profiling: 2675ms
+	BeginReloadAssembly (282ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (94ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (259ms)
+	LoadAllAssembliesAndSetupDomain (404ms)
+		LoadAssemblies (281ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (395ms)
+			TypeCache.Refresh (392ms)
+				TypeCache.ScanAssembly (363ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1615ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1478ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (1057ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (313ms)
+			ProcessInitializeOnLoadMethodAttributes (95ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.191 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.700 seconds
+Domain Reload Profiling: 2889ms
+	BeginReloadAssembly (261ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (39ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (107ms)
+	LoadAllAssembliesAndSetupDomain (757ms)
+		LoadAssemblies (533ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (376ms)
+			TypeCache.Refresh (325ms)
+				TypeCache.ScanAssembly (294ms)
+			ScanForSourceGeneratedMonoScriptInfo (34ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1701ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1338ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (39ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (210ms)
+			ProcessInitializeOnLoadAttributes (1000ms)
+			ProcessInitializeOnLoadMethodAttributes (61ms)
+			AfterProcessingInitializeOnLoad (21ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 4.66 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4371 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (1.1 MB). Loaded Objects now: 4838.
+Memory consumption went from 151.1 MB to 150.0 MB.
+Total: 3.984000 ms (FindLiveObjects: 0.331600 ms CreateObjectMapping: 0.150200 ms MarkObjects: 2.968000 ms  DeleteObjects: 0.532600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.690 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  2.180 seconds
+Domain Reload Profiling: 2866ms
+	BeginReloadAssembly (257ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (61ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (348ms)
+		LoadAssemblies (454ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (40ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (2ms)
+			ScanForSourceGeneratedMonoScriptInfo (18ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (2180ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (531ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (74ms)
+			ProcessInitializeOnLoadAttributes (389ms)
+			ProcessInitializeOnLoadMethodAttributes (40ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 5.69 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4424 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (1.2 MB). Loaded Objects now: 4905.
+Memory consumption went from 150.4 MB to 149.2 MB.
+Total: 5.555000 ms (FindLiveObjects: 0.421100 ms CreateObjectMapping: 0.541600 ms MarkObjects: 3.830000 ms  DeleteObjects: 0.760700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/ArRecordingConfig.cs: dfdb22d280f26bff6727fe6f9c34f9d1 -> 
+  custom:scripting/monoscript/fileName/ArCoreImg.cs: 284f8bc57305622727946cdceadb2cef -> 
+  custom:scripting/monoscript/fileName/Cli.cs: f278fa05dc0a28f05b8e56cf7a587c31 -> d287e08b50f2cb135aa4d7f8e01b7ef9
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/ARCoreAnchorSubsystem.cs: 8fd89380878aa630c35614c13d4b70e4 -> 
+  custom:scripting/monoscript/fileName/ARCoreSessionSubsystem.cs: 0499cfac149f3ba6a8678a379c5077a0 -> 
+  custom:scripting/monoscript/fileName/ARCoreOcclusionSubsystem.cs: 2a111039ddadb09f587c28ae3f37fc2b -> 
+  custom:scripting/monoscript/fileName/ARCoreXRPointCloudSubsystem.cs: a817e9a702204b3fa3e30b3243847693 -> 
+  custom:scripting/monoscript/fileName/Gradle.cs: f2ad869b521aeebb9f3c8c6665622b87 -> 
+  custom:scripting/monoscript/fileName/ImageConversionJobs.cs: 5daa4e6aadb43a7b9057d64b0ba5d568 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/HashCodeUtil.cs: 3ac2012e517078f051611cc23e19a706 -> ee7a4f9a9650d3c7f74eced4bfed8831
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/ArSession.cs: dc9c4d04514fe088f4acb3a600cfa61f -> 
+  custom:scripting/monoscript/fileName/ArPlaybackStatus.cs: f77b11c84a00703de9d452d424518caa -> 
+  custom:scripting/monoscript/fileName/ManagedReferenceImage.cs: 3f74dd150e48d66b5dd8288f3c3e1c34 -> 
+  custom:scripting/monoscript/fileName/ARCoreImageTrackingSubsystem.cs: 39d814b8b12f50336c43db8ce6f8ee94 -> 
+  custom:scripting/monoscript/fileName/ARCorePackageMetadata.cs: 1751e19b3bc5d304ce814e7f02fa6d47 -> 
+  custom:scripting/monoscript/fileName/ARCorePromise.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:scripting/monoscript/fileName/ArCameraConfigFilter.cs: b80d5ef788f451fa06963271e9d59efb -> 
+  custom:scripting/monoscript/fileName/NativeView.cs: 4afb79670cf27530a179f070ba3fe9aa -> 
+  custom:scripting/monoscript/fileName/ARCoreLoader.cs: 2c650baba67f1e04bc070894acda684f -> 
+  custom:scripting/monoscript/fileName/ARCoreXRDepthSubsystem.deprecated.cs: 9f24fee25a0b08179d7d1cb09e2e51f5 -> 
+  custom:scripting/monoscript/fileName/ARCoreEnvironmentProbeSubsystem.cs: 1b868584605b2895b3934baf5f9f6033 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/ARCoreBuildProcessor.cs: d9eab941277ca6504aeebd69836dd8b0 -> 
+  custom:scripting/monoscript/fileName/ARCoreBeforeGetCameraConfigurationEventArgs.cs: 8e2a6fe308d51ad1f6b16c500dc5dfb3 -> 
+  custom:scripting/monoscript/fileName/ARCorePlaneSubsystem.cs: d2278eda10dae0fc36c44eee439649a4 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/ARCoreSettingsProvider.cs: 79c816e2cf7b68babc51565d8a334acf -> 
+  custom:scripting/monoscript/fileName/ARCoreRaycastSubsystem.cs: 4746ee3ed0cece0abfde776c634af447 -> 
+  custom:scripting/monoscript/fileName/ARCoreFaceSubsystem.cs: c496ea8c93654d4c22c4220a77e9a21d -> 
+  custom:scripting/monoscript/fileName/ArCameraConfig.cs: 4a875ddea718888a33e0d31342770b8d -> 
+  custom:scripting/monoscript/fileName/Java.cs: 23333680cb2e70ba8bbce74628d877c3 -> 
+  custom:scripting/monoscript/fileName/ARCoreLoaderConstants.cs: 1ca2b374b9eebdabc880c6eec02abfbe -> 
+  custom:scripting/monoscript/fileName/RcoApi.cs: 1b7d1343bf82f11ff12a2ad830cbbf88 -> 
+  custom:scripting/monoscript/fileName/ARCoreLoaderSettings.cs: 98d75423d90e6a85b8a5d383cd4fad48 -> 
+  custom:scripting/monoscript/fileName/ArPrestoApi.cs: 102320236e333507f3c23510cf5fedf0 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/ArString.cs: a85954ac20e0c75f9dbcbebac19f7fbf -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/NativeObject.cs: 1c83a6ff9bdb6f537b0ca273504b9cb1 -> 
+  custom:scripting/precompiled-assembly-types:Unity.XR.ARCore.Editor: 02c2db43342c23e4477f9d7b07b95cb5 -> 
+  custom:scripting/monoscript/fileName/ARCoreBeforeSetConfigurationEventArgs.cs: 234cd91ed3cdf60645705e8837e7e78d -> 
+  custom:scripting/monoscript/fileName/ARCoreCameraSubsystem.cs: 2cce9a0f290d5c7a0cb70e2a3b0af3ab -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/InputLayoutLoader.cs: 2980c1660657b98176f57e2070c5cb69 -> a6fad719a67e63b0838341df7c073961
+  custom:scripting/monoscript/fileName/ARCoreImageDatabase.cs: 7f7d7783973546d2000bf9aa32566b8f -> 
+  custom:scripting/monoscript/fileName/StringExtensions.cs: 6f6c226b1c73c5132416ef95ad867308 -> 0a3ecf20ea398b07067a97ad700896f0
+  custom:scripting/monoscript/fileName/ARCoreSettings.cs: 40690c9c4969c061c980f80d35c3e6fb -> 
+  custom:scripting/monoscript/fileName/ArRecordingStatus.cs: 1e851bf64f38781ab761ff7585b2fc01 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/ARCoreProjectValidationRules.cs: eeb621f554a206cb3c7975cb72a27397 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/ArConfig.cs: 3fcec3d7584809d01b43e09f93c614f3 -> 
+  custom:scripting/precompiled-assembly-types:Unity.XR.ARCore: 905f88ea8a843a72f400d724a929b837 -> 
+  custom:scripting/monoscript/fileName/ARCoreFaceRegionData.cs: c3e1f4c128987c270a2af588eecf348c -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/ARCoreApi.cs: b7be0b56411f0cdcb6a1075249abb802 -> 
+  custom:scripting/monoscript/fileName/ARCorePermissionManager.cs: 532f7d03090ae14ae9bbbd403c359df8 -> 
+  custom:scripting/monoscript/fileName/ARCoreImageLibraryBuildProcessor.cs: 3f33f565654fcd80e4aa61a92c2169a1 -> 
+  custom:scripting/monoscript/fileName/ARCoreCpuImageApi.cs: 7e0d7ea0378a04357bca45463bebfe57 -> 
