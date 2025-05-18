@@ -311,3 +311,37 @@ AssetImportParameters requested are different than current active one (requested
   custom:scripting/monoscript/fileName/ARCorePermissionManager.cs: 532f7d03090ae14ae9bbbd403c359df8 -> 
   custom:scripting/monoscript/fileName/ARCoreImageLibraryBuildProcessor.cs: 3f33f565654fcd80e4aa61a92c2169a1 -> 
   custom:scripting/monoscript/fileName/ARCoreCpuImageApi.cs: 7e0d7ea0378a04357bca45463bebfe57 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 848370.435079 seconds.
+  path: Assets/XR/Settings/ARCoreSettings.asset
+  artifactKey: Guid(90691199110d1f24985d6afae04c52e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XR/Settings/ARCoreSettings.asset using Guid(90691199110d1f24985d6afae04c52e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a0a811f8f282b74e0302b3b3cd745aa0') in 0.037593 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Textures/stars_milky_way.jpg
+  artifactKey: Guid(a3e02f54768f0f54b86e6fc4162fb1f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/stars_milky_way.jpg using Guid(a3e02f54768f0f54b86e6fc4162fb1f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b84ba12b27ea3f6dcd0096cc0187c424') in 0.114055 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000114 seconds.
+  path: Assets/Materials/earth.mat
+  artifactKey: Guid(73e69577a41a54946a900841f4c7e0c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/earth.mat using Guid(73e69577a41a54946a900841f4c7e0c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6e4770a68218ef5e66298ce57e3e768f') in 0.170685 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

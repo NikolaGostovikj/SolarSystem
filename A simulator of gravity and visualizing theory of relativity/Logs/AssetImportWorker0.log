@@ -321,3 +321,107 @@ AssetImportParameters requested are different than current active one (requested
   custom:scripting/monoscript/fileName/ARCorePermissionManager.cs: 532f7d03090ae14ae9bbbd403c359df8 -> 
   custom:scripting/monoscript/fileName/ARCoreImageLibraryBuildProcessor.cs: 3f33f565654fcd80e4aa61a92c2169a1 -> 
   custom:scripting/monoscript/fileName/ARCoreCpuImageApi.cs: 7e0d7ea0378a04357bca45463bebfe57 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 509.090252 seconds.
+  path: Assets/XR/Loaders/ARCoreLoader.asset
+  artifactKey: Guid(5f5cb8d82cd3af441964fc28685e516e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XR/Loaders/ARCoreLoader.asset using Guid(5f5cb8d82cd3af441964fc28685e516e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'cd1a65fd31bd9949c58dadd207160f83') in 0.038383 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Textures/earth.jpg
+  artifactKey: Guid(b47df78f6301b6c48a028017c19828fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/earth.jpg using Guid(b47df78f6301b6c48a028017c19828fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '41dc2ce083aa6cc237d91b8dd99df2bf') in 0.114938 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Textures/mars.jpg
+  artifactKey: Guid(1b4ce22040271974199b214387af5f61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/mars.jpg using Guid(1b4ce22040271974199b214387af5f61) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '525a14a9651c38a12674d8ed847f8bf7') in 0.035967 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Materials/mars.mat
+  artifactKey: Guid(fa9e6543749fe6d4da2c03b9b62b2033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/mars.mat using Guid(fa9e6543749fe6d4da2c03b9b62b2033) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'dffdcb36dc8abf495ba04bf1c2c9fe03') in 0.133217 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 549.349257 seconds.
+  path: Assets/Materials/jupiter.mat
+  artifactKey: Guid(0772086f96830614f89debd74e357c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/jupiter.mat using Guid(0772086f96830614f89debd74e357c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '02f0b05103e70d98f74ee26bc6fa8a31') in 0.136482 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Materials/venus.mat
+  artifactKey: Guid(a810fe7f6235d834daa1283e0b73008a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/venus.mat using Guid(a810fe7f6235d834daa1283e0b73008a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0a27f2ebf6006b4490dcb9a48b279f86') in 0.044898 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Materials/mercury.mat
+  artifactKey: Guid(3f73a727ce81fff4a8b135130184cef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/mercury.mat using Guid(3f73a727ce81fff4a8b135130184cef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8c16c39e9f71dcb02928a9bfd5d19b08') in 0.039269 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Materials/sun.mat
+  artifactKey: Guid(249bef2a1dd86d341a10f901f5d1ca4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/sun.mat using Guid(249bef2a1dd86d341a10f901f5d1ca4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '139f946e9dc2f72491666e1c8bac3fea') in 0.048464 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Materials/saturn.mat
+  artifactKey: Guid(f615f65b0cce75449b56bcee1f61896d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/saturn.mat using Guid(f615f65b0cce75449b56bcee1f61896d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c1a794140f947ce35d148096a0a48efe') in 0.042947 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Materials/Sky.mat
+  artifactKey: Guid(cb7b1a13cb9399848a67f0fbbe674092) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Sky.mat using Guid(cb7b1a13cb9399848a67f0fbbe674092) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '667c0e23c6057fcd63ffd3f99ebecab3') in 0.078494 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
