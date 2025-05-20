@@ -1,40 +1,63 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
-public class ArPlaceObject : MonoBehaviour
-{
+public class ArPlaceObject : MonoBehaviour {
     public GameObject solarSystem;
+    // spawnedSolarSystem is the actual game object that is placed into the AR video, it is the copy of the prefab SolarSystem.
     private GameObject spawnedSolarSystem;
+    private bool isSolarSystemSpawned = false;
+    // The first detected plane that SolarSystem is spawned on is saved inside "solarSystemPlane".
+    private ARPlane solarSystemPlane = null;
 
     private ARRaycastManager raycastManager;
-    // Stores all successful AR hits.
+    private ARPlaneManager planeManager;
+    // A list that stores all detected points where AR raycast intersects with real-world objects.
     private List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         raycastManager = GetComponent<ARRaycastManager>();
+        planeManager = GetComponent<ARPlaneManager>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        // solarSystem has already been spawned.
-        if(spawnedSolarSystem != null) return;
+    void Update() {
+        // If SolarSystem prefab is spawned, no further actions are needed.
+        if(isSolarSystemSpawned) return;
 
-        if(Input.touchCount > 0) {
-            // If the screen was tocuhed, we take the first touch and store it inside touch variable.
-            Touch touch = Input.GetTouch(0);
+        // We use the center of the screen as the default raycast point.
+        Vector2 screenCenter = new Vector2(Screen.width / 2f, Screen.height / 2f);
 
-            // We're checking if raycast happens.
-            // User has to tap on some plane.
-            if(raycastManager.Raycast(touch.position, hits, TrackableType.PlaneWithinPolygon)) {
-                // Position of the first hit is stored inside hitPose.
-                Pose hitPose = hits[0].pose;
-                spawnedSolarSystem = Instantiate(solarSystem, hitPose.position, hitPose.rotation);
+        // Here we use TrackableType.PlaneWithinPolygon because we only want to look for plane surfaces to place the solar system on.
+        if(raycastManager.Raycast(screenCenter, hits, TrackableType.PlaneWithinPolygon)) {
+            isSolarSystemSpawned = true;
+        
+            Pose closestPlane = hits[0].pose;
+            
+            TrackableId solarSystemPlaneId = hits[0].trackableId;
+            solarSystemPlane = planeManager.GetPlane(solarSystemPlaneId);
+
+            // Moving the solar system slightly up the detected plane.
+            Vector3 placementOffset = new Vector3(0, 0.05f, 0);
+            Vector3 adjustedPosition = closestPlane.position + placementOffset;
+
+            spawnedSolarSystem = Instantiate(solarSystem, adjustedPosition, closestPlane.rotation);
+
+            // Size has to be adjusted for phone view, that way we avoid having too large planets that are too far away.
+            float solarSystemScale = 0.1f;
+            spawnedSolarSystem.transform.localScale = Vector3.one * solarSystemScale;
+
+            DisablePlaneDetection();
+        }
+    }
+
+    void DisablePlaneDetection() {
+        if(planeManager != null) {
+            planeManager.enabled = false;
+
+            // There is a chance that multiple planes are detected at the time, so we will disable every plane except the first one (the one where the solar system is on).
+            foreach(var plane in planeManager.trackables) {
+                if(plane != solarSystemPlane) plane.gameObject.SetActive(false);
             }
         }
     }
