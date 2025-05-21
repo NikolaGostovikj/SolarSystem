@@ -8,8 +8,6 @@ public class ArPlaceObject : MonoBehaviour {
     // spawnedSolarSystem is the actual game object that is placed into the AR video, it is the copy of the prefab SolarSystem.
     private GameObject spawnedSolarSystem;
     private bool isSolarSystemSpawned = false;
-    // The first detected plane that SolarSystem is spawned on is saved inside "solarSystemPlane".
-    private ARPlane solarSystemPlane = null;
 
     private ARRaycastManager raycastManager;
     private ARPlaneManager planeManager;
@@ -33,9 +31,6 @@ public class ArPlaceObject : MonoBehaviour {
             isSolarSystemSpawned = true;
         
             Pose closestPlane = hits[0].pose;
-            
-            TrackableId solarSystemPlaneId = hits[0].trackableId;
-            solarSystemPlane = planeManager.GetPlane(solarSystemPlaneId);
 
             // Moving the solar system slightly up the detected plane.
             Vector3 placementOffset = new Vector3(0, 0.05f, 0);
@@ -54,11 +49,8 @@ public class ArPlaceObject : MonoBehaviour {
     void DisablePlaneDetection() {
         if(planeManager != null) {
             planeManager.enabled = false;
-
             // There is a chance that multiple planes are detected at the time, so we will disable every plane except the first one (the one where the solar system is on).
-            foreach(var plane in planeManager.trackables) {
-                if(plane != solarSystemPlane) plane.gameObject.SetActive(false);
-            }
+            foreach(var plane in planeManager.trackables) plane.gameObject.SetActive(false);
         }
     }
 }
