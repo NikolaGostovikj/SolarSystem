@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class rotation : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     public float selfRotationSpeed = 50f;
+    
+    public string direction = "up";
+    private Vector3 vectorDirection;
 
-    void Update()
-    {
-        transform.Rotate(Vector3.up * selfRotationSpeed * Time.deltaTime);
+    void Start() {
+        vectorDirection = direction == "up" ? Vector3.up : direction == "right" ? Vector3.right : Vector3.forward;
+    }
+
+    void Update() {
+        transform.Rotate(vectorDirection * selfRotationSpeed * Time.deltaTime);
     }
 }

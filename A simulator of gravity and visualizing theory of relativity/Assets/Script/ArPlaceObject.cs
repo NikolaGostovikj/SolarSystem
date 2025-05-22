@@ -9,6 +9,8 @@ public class ArPlaceObject : MonoBehaviour {
     private GameObject spawnedSolarSystem;
     private bool isSolarSystemSpawned = false;
 
+    public GameObject loading;
+
     private ARRaycastManager raycastManager;
     private ARPlaneManager planeManager;
     // A list that stores all detected points where AR raycast intersects with real-world objects.
@@ -31,6 +33,8 @@ public class ArPlaceObject : MonoBehaviour {
             isSolarSystemSpawned = true;
         
             Pose closestPlane = hits[0].pose;
+
+            Destroy(loading);
 
             // Moving the solar system slightly up the detected plane.
             Vector3 placementOffset = new Vector3(0, 0.05f, 0);
