@@ -57,4 +57,11 @@ public class ArPlaceObject : MonoBehaviour {
             foreach(var plane in planeManager.trackables) plane.gameObject.SetActive(false);
         }
     }
+
+    public void OnRefresh() {
+        if(isSolarSystemSpawned) {
+            Destroy(spawnedSolarSystem);
+            isSolarSystemSpawned = false;
+        }
+    }
 }
