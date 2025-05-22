@@ -10,6 +10,7 @@ public class ArPlaceObject : MonoBehaviour {
     private bool isSolarSystemSpawned = false;
 
     public GameObject loading;
+    private GameObject spawnedLoading;
 
     private ARRaycastManager raycastManager;
     private ARPlaneManager planeManager;
@@ -17,6 +18,8 @@ public class ArPlaceObject : MonoBehaviour {
     private List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
     void Start() {
+        spawnedLoading = Instantiate(loading);
+
         raycastManager = GetComponent<ARRaycastManager>();
         planeManager = GetComponent<ARPlaneManager>();
     }
@@ -31,10 +34,9 @@ public class ArPlaceObject : MonoBehaviour {
         // Here we use TrackableType.PlaneWithinPolygon because we only want to look for plane surfaces to place the solar system on.
         if(raycastManager.Raycast(screenCenter, hits, TrackableType.PlaneWithinPolygon)) {
             isSolarSystemSpawned = true;
+            Destroy(spawnedLoading);
         
             Pose closestPlane = hits[0].pose;
-
-            Destroy(loading);
 
             // Moving the solar system slightly up the detected plane.
             Vector3 placementOffset = new Vector3(0, 0.05f, 0);
@@ -62,6 +64,11 @@ public class ArPlaceObject : MonoBehaviour {
         if(isSolarSystemSpawned) {
             Destroy(spawnedSolarSystem);
             isSolarSystemSpawned = false;
+
+            spawnedLoading = Instantiate(loading);
+
+            planeManager.enabled = true;
+            hits.Clear();
         }
     }
 }
