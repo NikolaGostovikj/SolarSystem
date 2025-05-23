@@ -18,7 +18,7 @@ public class ArPlaceObject : MonoBehaviour {
     private List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
     void Start() {
-        //spawnedLoading = Instantiate(loading);
+        spawnedLoading = Instantiate(loading);
 
         raycastManager = GetComponent<ARRaycastManager>();
         planeManager = GetComponent<ARPlaneManager>();
@@ -33,9 +33,9 @@ public class ArPlaceObject : MonoBehaviour {
 
         if(Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) {
             // Here we use TrackableType.PlaneWithinPolygon because we only want to look for plane surfaces to place the solar system on.
-            if(raycastManager.Raycast(screenCenter, hits, TrackableType.PlaneWithinPolygon)) {
+            if(raycastManager.Raycast(Input.GetTouch(0).position, hits, TrackableType.PlaneWithinPolygon)) {
                 isSolarSystemSpawned = true;
-                //Destroy(spawnedLoading);
+                Destroy(spawnedLoading);
         
                 Pose closestPlane = hits[0].pose;
 
@@ -49,16 +49,15 @@ public class ArPlaceObject : MonoBehaviour {
                 float solarSystemScale = 0.1f;
                 spawnedSolarSystem.transform.localScale = Vector3.one * solarSystemScale;
 
-                DisablePlaneDetection();
+                UpdatePlaneDetection(false);
             }
         }
     }
 
-    void DisablePlaneDetection() {
+    void UpdatePlaneDetection(bool status) {
         if(planeManager != null) {
-            planeManager.enabled = false;
-            // There is a chance that multiple planes are detected at the time, so we will disable every plane except the first one (the one where the solar system is on).
-            foreach(var plane in planeManager.trackables) plane.gameObject.SetActive(false);
+            planeManager.enabled = status;
+            foreach(var plane in planeManager.trackables) plane.gameObject.SetActive(status);
         }
     }
 
@@ -69,7 +68,7 @@ public class ArPlaceObject : MonoBehaviour {
 
             spawnedLoading = Instantiate(loading);
 
-            planeManager.enabled = true;
+            UpdatePlaneDetection(true);
             hits.Clear();
         }
     }
