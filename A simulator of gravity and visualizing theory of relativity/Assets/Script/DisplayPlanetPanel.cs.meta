@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 9f4a5151e77b87b4cabe02b72e37d8d0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - arCamera: {fileID: 2744761000363914584, guid: 4e4e6e07bcb5dd74db474a48fdbdf205, type: 3}
+  - planetPanel: {instanceID: 0}
+  - planetPanelTitle: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

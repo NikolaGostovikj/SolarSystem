@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class Planet : MonoBehaviour
 {
+    public string name;
+
     public float mass = 1000f; //measure mass
-    public float radius = 5f; 
+    public float radius = 5f;
     
     public float gravityForce(Planet planet){
         float G = 0.6674f;
@@ -20,7 +22,7 @@ public class Planet : MonoBehaviour
 
 
 
-     void Start(){
+     /*void Start(){
         //scaling and adding rigidbody
         transform.localScale = Vector3.one * radius * 2f;
         Rigidbody rb = gameObject.AddComponent<Rigidbody>();
@@ -29,7 +31,7 @@ public class Planet : MonoBehaviour
         rb.isKinematic = true; //disable the unity physics, add ours    
 
 
-    }
+    }*/
 
 
 
