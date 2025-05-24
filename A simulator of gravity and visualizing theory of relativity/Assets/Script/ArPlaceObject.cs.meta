@@ -5,6 +5,7 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - solarSystem: {fileID: 848257212710600151, guid: 4b583a0f1fd88374dbbbd2257a78b9b5, type: 3}
+  - loading: {fileID: 1375561796760313868, guid: b686f3e33c9c5894c80330f08bf644d8, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

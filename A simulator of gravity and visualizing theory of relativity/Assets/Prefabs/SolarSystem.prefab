@@ -119,6 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selfRotationSpeed: 36.36
+  direction: up
 --- !u!1 &848257212710600151
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,6 +279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selfRotationSpeed: 15
+  direction: up
 --- !u!1 &2482490476133222705
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,6 +399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selfRotationSpeed: -0.061
+  direction: up
 --- !u!1 &2509336636739207949
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,6 +519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selfRotationSpeed: 14.63
+  direction: up
 --- !u!1 &2821757249465641839
 GameObject:
   m_ObjectHideFlags: 0
@@ -635,6 +639,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selfRotationSpeed: -20.93
+  direction: up
 --- !u!1 &3196210408608296296
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,6 +650,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6133746570760625322}
   - component: {fileID: 6996568530552657124}
+  - component: {fileID: 248713821924876018}
   m_Layer: 0
   m_Name: saturn
   m_TagString: Untagged
@@ -682,6 +688,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orbitSpeed: 0.203
   orbitAxis: {x: 0, y: 1, z: 0}
+--- !u!135 &248713821924876018
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3196210408608296296}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3454019795991848000
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,6 +719,7 @@ GameObject:
   m_Component:
   - component: {fileID: 133795841749527957}
   - component: {fileID: 2737060309050555842}
+  - component: {fileID: 2592021376556536354}
   m_Layer: 0
   m_Name: venus
   m_TagString: Untagged
@@ -729,6 +757,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orbitSpeed: 9.73
   orbitAxis: {x: 0, y: 1, z: 0}
+--- !u!135 &2592021376556536354
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3454019795991848000}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4238665978271989544
 GameObject:
   m_ObjectHideFlags: 0
@@ -739,6 +788,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1231924800852256179}
   - component: {fileID: 8941088549513233980}
+  - component: {fileID: 2874443190976015080}
   m_Layer: 0
   m_Name: uranus
   m_TagString: Untagged
@@ -776,6 +826,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orbitSpeed: 0.0713
   orbitAxis: {x: 0, y: 1, z: 0}
+--- !u!135 &2874443190976015080
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4238665978271989544}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4410975469891889812
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,6 +966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selfRotationSpeed: 0.255
+  direction: up
 --- !u!1 &4826896228211830918
 GameObject:
   m_ObjectHideFlags: 0
@@ -907,6 +979,7 @@ GameObject:
   - component: {fileID: 5190379831803338355}
   - component: {fileID: 6380530086917694525}
   - component: {fileID: 751200789875332315}
+  - component: {fileID: 7675864849627911628}
   m_Layer: 0
   m_Name: sun
   m_TagString: Untagged
@@ -1000,6 +1073,27 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!135 &7675864849627911628
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4826896228211830918}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5884135629854527776
 GameObject:
   m_ObjectHideFlags: 0
@@ -1010,6 +1104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2771160047996637956}
   - component: {fileID: 3500783929834841228}
+  - component: {fileID: 5685963106250071976}
   m_Layer: 0
   m_Name: mars
   m_TagString: Untagged
@@ -1047,6 +1142,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orbitSpeed: 3.18
   orbitAxis: {x: 0, y: 1, z: 0}
+--- !u!135 &5685963106250071976
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5884135629854527776}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5918932395725953490
 GameObject:
   m_ObjectHideFlags: 0
@@ -1057,6 +1173,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2028246276024516014}
   - component: {fileID: 2272721982625209392}
+  - component: {fileID: 6197736075822650958}
   m_Layer: 0
   m_Name: mercury
   m_TagString: Untagged
@@ -1094,6 +1211,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orbitSpeed: 24.91
   orbitAxis: {x: 0, y: 1, z: 0}
+--- !u!135 &6197736075822650958
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5918932395725953490}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7423811582158173597
 GameObject:
   m_ObjectHideFlags: 0
@@ -1213,6 +1351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selfRotationSpeed: 22.36
+  direction: up
 --- !u!1 &8018299476815725828
 GameObject:
   m_ObjectHideFlags: 0
@@ -1270,6 +1409,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8917976665019053358}
   - component: {fileID: 9011014544936304085}
+  - component: {fileID: 1495232289901701597}
   m_Layer: 0
   m_Name: earth
   m_TagString: Untagged
@@ -1307,6 +1447,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orbitSpeed: 6
   orbitAxis: {x: 0, y: 1, z: 0}
+--- !u!135 &1495232289901701597
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8458085284931674401}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8675467028599517350
 GameObject:
   m_ObjectHideFlags: 0
@@ -1426,6 +1587,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selfRotationSpeed: 33.64
+  direction: up
 --- !u!1 &9034103633335032967
 GameObject:
   m_ObjectHideFlags: 0
@@ -1436,6 +1598,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2178955500768309065}
   - component: {fileID: 4456524255885329962}
+  - component: {fileID: 1605847594734303796}
   m_Layer: 0
   m_Name: jupiter
   m_TagString: Untagged
@@ -1473,3 +1636,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orbitSpeed: 0.51
   orbitAxis: {x: 0, y: 1, z: 0}
+--- !u!135 &1605847594734303796
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9034103633335032967}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
