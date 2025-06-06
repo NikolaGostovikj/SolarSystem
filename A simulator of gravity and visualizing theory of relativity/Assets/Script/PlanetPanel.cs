@@ -27,6 +27,8 @@ public class PlanetPanel : MonoBehaviour {
     }
 
     void DisplayPanel(Planet planet) {
+        if(planetPanel.activeSelf) return;
+    
         activePlanet = planet;
         activePlanet.particles.gameObject.SetActive(true);
 
