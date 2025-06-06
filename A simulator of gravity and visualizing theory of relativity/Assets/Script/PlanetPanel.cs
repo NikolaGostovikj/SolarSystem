@@ -9,6 +9,8 @@ public class PlanetPanel : MonoBehaviour {
     public GameObject planetPanel;
     public TextMeshProUGUI planetPanelTitle;
     public TextMeshProUGUI planetPanelFunFactsContent;
+    public TMP_InputField massInput;
+    public TMP_InputField radiusInput;
 
     private Planet activePlanet;
 
@@ -29,6 +31,9 @@ public class PlanetPanel : MonoBehaviour {
         activePlanet.particles.gameObject.SetActive(true);
 
         planetPanelTitle.text = planet.name;
+
+        massInput.text = planet.mass.ToString();
+        radiusInput.text = planet.radius.ToString();
 
         string[] planetFunFacts = new string[] {
             // Sun
@@ -92,5 +97,14 @@ public class PlanetPanel : MonoBehaviour {
 
         planetPanelTitle.text = "";
         planetPanelFunFactsContent.text = "";
+    }
+
+    public void OnApply() {
+        if(activePlanet == null) return;
+
+        float newMass;
+        float newRadius;
+
+        if(float.TryParse(massInput.text, out newMass) && float.TryParse(radiusInput.text, out newRadius)) activePlanet.ApplyChanges(newMass, newRadius);
     }
 }

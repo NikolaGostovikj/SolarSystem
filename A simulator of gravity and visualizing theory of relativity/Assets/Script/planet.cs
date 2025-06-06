@@ -6,7 +6,7 @@ public class Planet : MonoBehaviour
     public ParticleSystem particles;
 
     public float mass = 1000f; //measure mass
-    public float radius = 5f;
+    public float radius;
     
     public float gravityForce(Planet planet){
         float G = 0.6674f;
@@ -21,21 +21,17 @@ public class Planet : MonoBehaviour
         return force;
     }
 
+    public void ApplyChanges(float newMass, float newRadius) {
+        mass = newMass;
+        radius = newRadius;
 
-
-     /*void Start(){
-        //scaling and adding rigidbody
         transform.localScale = Vector3.one * radius * 2f;
-        Rigidbody rb = gameObject.AddComponent<Rigidbody>();
-        rb.mass = mass; //setting mass
-        rb.useGravity = false; 
-        rb.isKinematic = true; //disable the unity physics, add ours    
 
+        Rigidbody rb = GetComponent<Rigidbody>();
+        if (rb != null) rb.mass = mass;
+    }
 
-    }*/
-
-
-
-
-
+    void Start(){
+        radius = transform.localScale.x / 2f;
+    }
 }
