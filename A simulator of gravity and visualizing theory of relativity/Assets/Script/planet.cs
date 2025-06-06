@@ -3,6 +3,7 @@ using UnityEngine;
 public class Planet : MonoBehaviour
 {
     public string name;
+    public ParticleSystem particles;
 
     public float mass = 1000f; //measure mass
     public float radius = 5f;

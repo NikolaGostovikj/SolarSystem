@@ -10,6 +10,8 @@ public class PlanetPanel : MonoBehaviour {
     public TextMeshProUGUI planetPanelTitle;
     public TextMeshProUGUI planetPanelFunFactsContent;
 
+    private Planet activePlanet;
+
     void Update() {
         if(Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) {
             Ray ray = arCamera.ScreenPointToRay(Input.GetTouch(0).position);
@@ -17,13 +19,16 @@ public class PlanetPanel : MonoBehaviour {
 
             if(Physics.Raycast(ray, out hit)) {
                 Planet planet = hit.transform.GetComponent<Planet>();
-                if(planet != null) DisplayPanel(planet.name);
+                if(planet != null) DisplayPanel(planet);
             }
         }
     }
 
-    void DisplayPanel(string planetName) {
-        planetPanelTitle.text = planetName;
+    void DisplayPanel(Planet planet) {
+        activePlanet = planet;
+        activePlanet.particles.gameObject.SetActive(true);
+
+        planetPanelTitle.text = planet.name;
 
         string[] planetFunFacts = new string[] {
             // Sun
@@ -46,7 +51,7 @@ public class PlanetPanel : MonoBehaviour {
             "1. Neptune has the strongest winds in the solar system.\n2. It appears blue due to methane in its atmosphere.\n3. Neptune was mathematically predicted before it was observed through a telescope.",
         };
 
-        switch(planetName) {
+        switch(planet.name) {
             case "Sun":
                 planetPanelFunFactsContent.text = planetFunFacts[0];
                 break;
@@ -81,6 +86,9 @@ public class PlanetPanel : MonoBehaviour {
 
     public void HidePanel() {
         planetPanel.SetActive(false);
+
+        activePlanet.particles.gameObject.SetActive(false);
+        activePlanet = null;
 
         planetPanelTitle.text = "";
         planetPanelFunFactsContent.text = "";

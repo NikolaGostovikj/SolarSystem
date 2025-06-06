@@ -134,6 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Jupiter
+  particles: {fileID: 8547014817879539015}
   mass: 1000
   radius: 5
 --- !u!1 &848257212710600151
@@ -311,6 +312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Earth
+  particles: {fileID: 389142512009001882}
   mass: 1000
   radius: 5
 --- !u!1 &2482490476133222705
@@ -447,6 +449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Venus
+  particles: {fileID: 2450046735514765148}
   mass: 1000
   radius: 5
 --- !u!1 &2509336636739207949
@@ -583,6 +586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Mars
+  particles: {fileID: 4197020635142179538}
   mass: 1000
   radius: 5
 --- !u!1 &2821757249465641839
@@ -719,6 +723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Uranus
+  particles: {fileID: 44850905497678220}
   mass: 1000
   radius: 5
 --- !u!1 &3196210408608296296
@@ -1065,6 +1070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Mercury
+  particles: {fileID: 5654925714748275689}
   mass: 1000
   radius: 5
 --- !u!1 &4826896228211830918
@@ -1186,6 +1192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Sun
+  particles: {fileID: 3321241699657193581}
   mass: 1000
   radius: 5
 --- !u!1 &5884135629854527776
@@ -1462,6 +1469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Neptune
+  particles: {fileID: 6065954481762134951}
   mass: 1000
   radius: 5
 --- !u!1 &7695756199188814295
@@ -1799,6 +1807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Saturn
+  particles: {fileID: 2829571755141140898}
   mass: 1000
   radius: 5
 --- !u!1 &9034103633335032967
@@ -1889,6 +1898,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3449408093247034709, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3449408093247034709, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
       value: 0.22352943
       objectReference: {fileID: 0}
@@ -1903,6 +1916,10 @@ PrefabInstance:
     - target: {fileID: 4760476998607459414, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
       propertyPath: m_Name
       value: Particle sun
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760476998607459414, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7570360631699745597, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
       propertyPath: m_LocalScale.x
@@ -1965,6 +1982,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
+--- !u!198 &3321241699657193581 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3449408093247034709, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
+  m_PrefabInstance: {fileID: 128820810508979512}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7549998054678488581 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7570360631699745597, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
@@ -1978,6 +2000,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 133795841749527957}
     m_Modifications:
+    - target: {fileID: 3449408093247034709, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3449408093247034709, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
       value: 0.22352943
@@ -1993,6 +2019,10 @@ PrefabInstance:
     - target: {fileID: 4760476998607459414, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
       propertyPath: m_Name
       value: Particle venus
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760476998607459414, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7570360631699745597, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
       propertyPath: m_LocalScale.x
@@ -2051,6 +2081,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
+--- !u!198 &2450046735514765148 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3449408093247034709, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
+  m_PrefabInstance: {fileID: 999397679470367241}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7264798807676614964 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7570360631699745597, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
@@ -2064,9 +2099,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2771160047996637956}
     m_Modifications:
+    - target: {fileID: 3449408093247034709, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4760476998607459414, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
       propertyPath: m_Name
       value: Particle mars
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760476998607459414, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7570360631699745597, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2113,6 +2156,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
+--- !u!198 &4197020635142179538 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3449408093247034709, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
+  m_PrefabInstance: {fileID: 1576280096660692871}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9002485132626113722 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7570360631699745597, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
@@ -2126,6 +2174,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8917976665019053358}
     m_Modifications:
+    - target: {fileID: 3449408093247034709, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3449408093247034709, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
       value: 0.427451
@@ -2141,6 +2193,10 @@ PrefabInstance:
     - target: {fileID: 4760476998607459414, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
       propertyPath: m_Name
       value: Particle earth
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760476998607459414, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7570360631699745597, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
       propertyPath: m_LocalScale.x
@@ -2199,6 +2255,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
+--- !u!198 &389142512009001882 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3449408093247034709, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
+  m_PrefabInstance: {fileID: 3078282290708901583}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4879390219906106866 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7570360631699745597, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
@@ -2256,6 +2317,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Particle neptune
       objectReference: {fileID: 0}
+    - target: {fileID: 3304160221528159445, guid: 9cb881acd3e7d6c46809623be84cfbf7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7156776735332529767, guid: 9cb881acd3e7d6c46809623be84cfbf7, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2264,6 +2333,11 @@ PrefabInstance:
 --- !u!4 &2745034546767540549 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1254025532888689797, guid: 9cb881acd3e7d6c46809623be84cfbf7, type: 3}
+  m_PrefabInstance: {fileID: 3999024892062768576}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &6065954481762134951 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7156776735332529767, guid: 9cb881acd3e7d6c46809623be84cfbf7, type: 3}
   m_PrefabInstance: {fileID: 3999024892062768576}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4403672181359462032
@@ -2277,6 +2351,10 @@ PrefabInstance:
     - target: {fileID: 295425939114777933, guid: de48fd2e166748248b40f0e0cf0372e7, type: 3}
       propertyPath: m_Name
       value: Particle jupiter
+      objectReference: {fileID: 0}
+    - target: {fileID: 295425939114777933, guid: de48fd2e166748248b40f0e0cf0372e7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4186900331522504953, guid: de48fd2e166748248b40f0e0cf0372e7, type: 3}
       propertyPath: m_LocalScale.x
@@ -2343,6 +2421,10 @@ PrefabInstance:
       value: 4.42
       objectReference: {fileID: 0}
     - target: {fileID: 5440880741938822103, guid: de48fd2e166748248b40f0e0cf0372e7, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5440880741938822103, guid: de48fd2e166748248b40f0e0cf0372e7, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
       value: 0.8313726
       objectReference: {fileID: 0}
@@ -2364,6 +2446,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4186900331522504953, guid: de48fd2e166748248b40f0e0cf0372e7, type: 3}
   m_PrefabInstance: {fileID: 4403672181359462032}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &8547014817879539015 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5440880741938822103, guid: de48fd2e166748248b40f0e0cf0372e7, type: 3}
+  m_PrefabInstance: {fileID: 4403672181359462032}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5336093624237675429
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2375,6 +2462,14 @@ PrefabInstance:
     - target: {fileID: 2391618332480287683, guid: b91023925da775b409064ff8ceb3ba39, type: 3}
       propertyPath: m_Name
       value: Particle uranus
+      objectReference: {fileID: 0}
+    - target: {fileID: 2391618332480287683, guid: b91023925da775b409064ff8ceb3ba39, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5373580815821365801, guid: b91023925da775b409064ff8ceb3ba39, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6860292363442396986, guid: b91023925da775b409064ff8ceb3ba39, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2421,6 +2516,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b91023925da775b409064ff8ceb3ba39, type: 3}
+--- !u!198 &44850905497678220 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5373580815821365801, guid: b91023925da775b409064ff8ceb3ba39, type: 3}
+  m_PrefabInstance: {fileID: 5336093624237675429}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1529318898588372127 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6860292363442396986, guid: b91023925da775b409064ff8ceb3ba39, type: 3}
@@ -2434,6 +2534,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2028246276024516014}
     m_Modifications:
+    - target: {fileID: 3449408093247034709, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3449408093247034709, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
       value: 0.58431375
@@ -2449,6 +2553,10 @@ PrefabInstance:
     - target: {fileID: 4760476998607459414, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
       propertyPath: m_Name
       value: Particle mercury
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760476998607459414, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7570360631699745597, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
       propertyPath: m_LocalScale.x
@@ -2512,6 +2620,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7570360631699745597, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
   m_PrefabInstance: {fileID: 7035914112094842556}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &5654925714748275689 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3449408093247034709, guid: 122e2792538c69043bc60d9eebd37c43, type: 3}
+  m_PrefabInstance: {fileID: 7035914112094842556}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7837755046164720245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2523,6 +2636,10 @@ PrefabInstance:
     - target: {fileID: 295425939114777933, guid: de48fd2e166748248b40f0e0cf0372e7, type: 3}
       propertyPath: m_Name
       value: Particle sturn
+      objectReference: {fileID: 0}
+    - target: {fileID: 295425939114777933, guid: de48fd2e166748248b40f0e0cf0372e7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4186900331522504953, guid: de48fd2e166748248b40f0e0cf0372e7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2564,11 +2681,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5440880741938822103, guid: de48fd2e166748248b40f0e0cf0372e7, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de48fd2e166748248b40f0e0cf0372e7, type: 3}
+--- !u!198 &2829571755141140898 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5440880741938822103, guid: de48fd2e166748248b40f0e0cf0372e7, type: 3}
+  m_PrefabInstance: {fileID: 7837755046164720245}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6259888149983482508 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4186900331522504953, guid: de48fd2e166748248b40f0e0cf0372e7, type: 3}
