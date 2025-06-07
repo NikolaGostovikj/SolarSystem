@@ -47,11 +47,11 @@ public class PlanetPanel : MonoBehaviour {
             // Earth
             "1. Earth is the only planet known to support life.\n2. 70% of Earth's surface is covered by water.\n3. Earth has a powerful magnetic field that protects it from solar radiation.",
             // Mars
-            "1. Mars has the tallest volcano in the solar system – Olympus Mons.\n2. It has seasons similar to Earth due to its tilted axis.\n3. Mars appears red due to iron oxide (rust) on its surface.",
+            "1. Mars has the tallest volcano in the solar system ï¿½ Olympus Mons.\n2. It has seasons similar to Earth due to its tilted axis.\n3. Mars appears red due to iron oxide (rust) on its surface.",
             // Jupiter
-            "1. Jupiter is the largest planet in our solar system.\n2. It has a Great Red Spot – a giant storm bigger than Earth.\n3. Jupiter has at least 95 moons, including Ganymede, the largest moon.",
+            "1. Jupiter is the largest planet in our solar system.\n2. It has a Great Red Spot ï¿½ a giant storm bigger than Earth.\n3. Jupiter has at least 95 moons, including Ganymede, the largest moon.",
             // Saturn
-            "1. Saturn is famous for its beautiful ring system.\n2. It's less dense than water – it could float if there were a big enough ocean.\n3. Saturn has over 140 known moons.",
+            "1. Saturn is famous for its beautiful ring system.\n2. It's less dense than water ï¿½ it could float if there were a big enough ocean.\n3. Saturn has over 140 known moons.",
             // Uranus
             "1. Uranus rotates on its side, making its seasons extreme.\n2. It's the coldest planet in the solar system.\n3. Uranus was the first planet discovered with a telescope.",
             // Neptune
