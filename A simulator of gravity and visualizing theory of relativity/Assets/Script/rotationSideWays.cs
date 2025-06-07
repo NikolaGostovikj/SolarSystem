@@ -5,16 +5,11 @@ using UnityEngine;
 
 public class rotationSideWays : MonoBehaviour
 {
-    public class GameObject obj;
     float rotationSpeed = 50f;
-
-    void Start(){
-
-    }
-
-
+    
+    //Skewed rotation
     void Update(){
-        obj.transform.Rotate.()
+        transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime);
     }
 
 }
