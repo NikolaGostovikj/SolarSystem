@@ -1445,3 +1445,77 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:scripting/monoscript/fileName/rotation.cs: 3cce116c6fa9c1e7baa273fa65bb1e50 -> 
   custom:scripting/precompiled-assembly-types:Assembly-CSharp: 1baa5ccee8f2411e4754f298dade57af -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1920.998550 seconds.
+  path: Assets/particle/Particle mars.prefab
+  artifactKey: Guid(122e2792538c69043bc60d9eebd37c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/particle/Particle mars.prefab using Guid(122e2792538c69043bc60d9eebd37c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'db739ab5d816f35e75600af161ef4a75') in 0.203140 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/particle/Particle sturn.prefab
+  artifactKey: Guid(de48fd2e166748248b40f0e0cf0372e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/particle/Particle sturn.prefab using Guid(de48fd2e166748248b40f0e0cf0372e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '79715c26399c79745a04e42b076b6448') in 0.026887 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/particle/Stylized_Planets.fbx
+  artifactKey: Guid(4bbaf57eedbc6854b92ef6f1dae49291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/particle/Stylized_Planets.fbx using Guid(4bbaf57eedbc6854b92ef6f1dae49291) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '0b15b75822282fe5bfc2fe3772cfde7a') in 0.171358 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 42
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/particle/Particle neptune.prefab
+  artifactKey: Guid(9cb881acd3e7d6c46809623be84cfbf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/particle/Particle neptune.prefab using Guid(9cb881acd3e7d6c46809623be84cfbf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '55286dc32d44ae42148f7caf91a7ef3f') in 0.021017 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 7.170904 seconds.
+  path: Assets/particle/Materials/N00282108.mat
+  artifactKey: Guid(c3516f70ee9c92141be6a8ee86794d62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/particle/Materials/N00282108.mat using Guid(c3516f70ee9c92141be6a8ee86794d62) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '44fb46623ac241a05bf7157884a0529d') in 0.031804 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 3.110098 seconds.
+  path: Assets/Images/x-icon.png
+  artifactKey: Guid(39d693472635f8942af9b2f30bb4b1dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/x-icon.png using Guid(39d693472635f8942af9b2f30bb4b1dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '587d82dbacae3d17491fcde8d585655c') in 0.046687 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

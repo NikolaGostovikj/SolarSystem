@@ -22,16 +22,19 @@ public class Planet : MonoBehaviour
 
 
 
-     /*void Start(){
+     void Start(){
         //scaling and adding rigidbody
         transform.localScale = Vector3.one * radius * 2f;
         Rigidbody rb = gameObject.AddComponent<Rigidbody>();
         rb.mass = mass; //setting mass
         rb.useGravity = false; 
-        rb.isKinematic = true; //disable the unity physics, add ours    
+        rb.isKinematic = false; //disable only gravity, false to use unity collision    
 
 
-    }*/
+        // this is for the collisoon
+        gameObject.AddComponent<SphereCollider>();
+
+    }
 
 
 
