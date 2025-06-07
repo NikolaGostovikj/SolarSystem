@@ -1,6 +1,6 @@
 using UnityEngine;
-using System.Colletions;
-using System.Colletions.Generic;
+using System.Collections;
+using System.Collections.Generic;
 
 public class collision : MonoBehaviour
 {
