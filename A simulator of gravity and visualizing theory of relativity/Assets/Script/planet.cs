@@ -7,6 +7,11 @@ public class Planet : MonoBehaviour
 
     public float mass = 1000f; //measure mass
     public float radius;
+
+    private float selfRotationSpeed = 50f;
+    
+    public string direction = "up";
+    private Vector3 vectorDirection;
     
     public float gravityForce(Planet planet){
         float G = 0.6674f;
@@ -33,5 +38,11 @@ public class Planet : MonoBehaviour
 
     void Start(){
         radius = transform.localScale.x / 2f;
+        vectorDirection = direction == "up" ? Vector3.up : direction == "right" ? Vector3.right : Vector3.forward;
+    }
+
+    void Update() {
+        vectorDirection = direction == "up" ? Vector3.up : direction == "right" ? Vector3.right : Vector3.forward;
+        transform.Rotate(vectorDirection * selfRotationSpeed * Time.deltaTime);
     }
 }

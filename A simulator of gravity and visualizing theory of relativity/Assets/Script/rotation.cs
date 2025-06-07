@@ -15,6 +15,7 @@ public class rotation : MonoBehaviour
     }
 
     void Update() {
+        vectorDirection = direction == "up" ? Vector3.up : direction == "right" ? Vector3.right : Vector3.forward;
         transform.Rotate(vectorDirection * selfRotationSpeed * Time.deltaTime);
     }
 }

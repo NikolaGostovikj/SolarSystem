@@ -109,4 +109,15 @@ public class PlanetPanel : MonoBehaviour {
 
         if(float.TryParse(massInput.text, out newMass) && float.TryParse(radiusInput.text, out newRadius)) activePlanet.ApplyChanges(newMass, newRadius);
     }
+
+    public void OnRotate() {
+        if(activePlanet == null) return;
+        
+        string[] directionArray = { "up", "right", "forward" };
+            
+        int index = UnityEngine.Random.Range(0, directionArray.Length);
+        string newDirection = directionArray[index];
+
+        activePlanet.direction = newDirection;
+    }
 }

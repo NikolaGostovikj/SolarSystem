@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1550758278278415124}
   - component: {fileID: 4202289201274876922}
   - component: {fileID: 3709473791106041626}
-  - component: {fileID: 5811538569647451972}
   - component: {fileID: 196673863383427776}
   m_Layer: 0
   m_Name: Sphere
@@ -107,20 +106,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5811538569647451972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 224170781395536622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a2c2530a8b508649872da48e285b049, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selfRotationSpeed: 36.36
-  direction: up
 --- !u!114 &196673863383427776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,6 +122,7 @@ MonoBehaviour:
   particles: {fileID: 8547014817879539015}
   mass: 1000
   radius: 0.52
+  direction: up
 --- !u!1 &848257212710600151
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,7 +176,6 @@ GameObject:
   - component: {fileID: 4155923605532059520}
   - component: {fileID: 3478899446556487071}
   - component: {fileID: 453298926081809814}
-  - component: {fileID: 3937106145620057072}
   - component: {fileID: 2419966722815163666}
   m_Layer: 0
   m_Name: Sphere
@@ -285,20 +270,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3937106145620057072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1966570517699438773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a2c2530a8b508649872da48e285b049, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selfRotationSpeed: 15
-  direction: up
 --- !u!114 &2419966722815163666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -315,6 +286,7 @@ MonoBehaviour:
   particles: {fileID: 389142512009001882}
   mass: 1000
   radius: 0.4
+  direction: up
 --- !u!1 &2482490476133222705
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,7 +299,6 @@ GameObject:
   - component: {fileID: 7665249424242871361}
   - component: {fileID: 7595194594783111479}
   - component: {fileID: 5185673754020940790}
-  - component: {fileID: 4046313954897439032}
   - component: {fileID: 3847506203823386516}
   m_Layer: 0
   m_Name: Sphere
@@ -422,20 +393,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4046313954897439032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2482490476133222705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a2c2530a8b508649872da48e285b049, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selfRotationSpeed: -0.061
-  direction: up
 --- !u!114 &3847506203823386516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -452,6 +409,7 @@ MonoBehaviour:
   particles: {fileID: 2450046735514765148}
   mass: 1000
   radius: 0.35
+  direction: up
 --- !u!1 &2509336636739207949
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,7 +422,6 @@ GameObject:
   - component: {fileID: 6420300580723848153}
   - component: {fileID: 2656276574884094925}
   - component: {fileID: 3839628648630091042}
-  - component: {fileID: 7239082882527150799}
   - component: {fileID: 1883318937491913066}
   m_Layer: 0
   m_Name: Sphere
@@ -559,20 +516,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7239082882527150799
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2509336636739207949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a2c2530a8b508649872da48e285b049, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selfRotationSpeed: 14.63
-  direction: up
 --- !u!114 &1883318937491913066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -589,6 +532,7 @@ MonoBehaviour:
   particles: {fileID: 4197020635142179538}
   mass: 1000
   radius: 0.3
+  direction: up
 --- !u!1 &2821757249465641839
 GameObject:
   m_ObjectHideFlags: 0
@@ -601,7 +545,6 @@ GameObject:
   - component: {fileID: 163688255470242221}
   - component: {fileID: 8942066948195582590}
   - component: {fileID: 779912426541012654}
-  - component: {fileID: 8869717231126776765}
   - component: {fileID: 7757796617198726979}
   m_Layer: 0
   m_Name: Sphere
@@ -696,20 +639,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8869717231126776765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2821757249465641839}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a2c2530a8b508649872da48e285b049, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selfRotationSpeed: -20.93
-  direction: up
 --- !u!114 &7757796617198726979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -726,6 +655,7 @@ MonoBehaviour:
   particles: {fileID: 44850905497678220}
   mass: 1000
   radius: 0.45
+  direction: up
 --- !u!1 &3196210408608296296
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,7 +878,6 @@ GameObject:
   - component: {fileID: 4992102870392736682}
   - component: {fileID: 1580736755443857087}
   - component: {fileID: 5657730820487328917}
-  - component: {fileID: 7446052016849564928}
   - component: {fileID: 4990492418520176401}
   m_Layer: 0
   m_Name: Sphere
@@ -1043,20 +972,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7446052016849564928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4410975469891889812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a2c2530a8b508649872da48e285b049, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selfRotationSpeed: 0.255
-  direction: up
 --- !u!114 &4990492418520176401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1073,6 +988,7 @@ MonoBehaviour:
   particles: {fileID: 5654925714748275689}
   mass: 1000
   radius: 0.3
+  direction: up
 --- !u!1 &4826896228211830918
 GameObject:
   m_ObjectHideFlags: 0
@@ -1195,6 +1111,7 @@ MonoBehaviour:
   particles: {fileID: 3321241699657193581}
   mass: 1000
   radius: 2
+  direction: up
 --- !u!1 &5884135629854527776
 GameObject:
   m_ObjectHideFlags: 0
@@ -1347,7 +1264,6 @@ GameObject:
   - component: {fileID: 7733576137611044207}
   - component: {fileID: 7792253069669619013}
   - component: {fileID: 5426806719121744622}
-  - component: {fileID: 1477679982688733493}
   - component: {fileID: 2404041407336322192}
   m_Layer: 0
   m_Name: Sphere
@@ -1442,20 +1358,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1477679982688733493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7423811582158173597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a2c2530a8b508649872da48e285b049, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selfRotationSpeed: 22.36
-  direction: up
 --- !u!114 &2404041407336322192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1472,6 +1374,7 @@ MonoBehaviour:
   particles: {fileID: 6065954481762134951}
   mass: 1000
   radius: 0.45
+  direction: up
 --- !u!1 &7695756199188814295
 GameObject:
   m_ObjectHideFlags: 0
@@ -1685,7 +1588,6 @@ GameObject:
   - component: {fileID: 4808643386560933855}
   - component: {fileID: 1755297562162525776}
   - component: {fileID: 3222287377171730194}
-  - component: {fileID: 7503461450520535501}
   - component: {fileID: 4004507786743442269}
   m_Layer: 0
   m_Name: Sphere
@@ -1780,20 +1682,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7503461450520535501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8675467028599517350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a2c2530a8b508649872da48e285b049, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selfRotationSpeed: 33.64
-  direction: up
 --- !u!114 &4004507786743442269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1810,6 +1698,7 @@ MonoBehaviour:
   particles: {fileID: 2829571755141140898}
   mass: 1000
   radius: 0.6
+  direction: up
 --- !u!1 &9034103633335032967
 GameObject:
   m_ObjectHideFlags: 0
