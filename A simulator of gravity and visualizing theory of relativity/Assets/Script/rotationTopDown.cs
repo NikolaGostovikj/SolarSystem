@@ -10,8 +10,9 @@ public class rotationTopDown : MonoBehaviour
 
     
     void Update(){
-        //rotates the object from top to down, we already have left to right rotation
-        obj.transform.Rotate(Vector3.(1,0,0 * rotationSpeed * Time.deltaTime));
+        //Roll
+        obj.transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime);
+        
     }
 
 }
