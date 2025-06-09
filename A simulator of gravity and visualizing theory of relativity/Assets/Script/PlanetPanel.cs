@@ -13,6 +13,7 @@ public class PlanetPanel : MonoBehaviour {
     public TMP_InputField radiusInput;
 
     private Planet activePlanet;
+    private string[] solarSystemPlanets = { "Sun", "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune" };
 
     void Update() {
         if(Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began) {
@@ -34,8 +35,9 @@ public class PlanetPanel : MonoBehaviour {
 
         planetPanelTitle.text = planet.name;
 
-        massInput.text = planet.mass.ToString();
         radiusInput.text = planet.radius.ToString();
+
+        string gravityForceResult = planet.GravityForce(planet, solarSystemPlanets);
 
         string[] planetFunFacts = new string[] {
             // Sun
@@ -88,6 +90,8 @@ public class PlanetPanel : MonoBehaviour {
                 break;
         }
 
+        planetPanelFunFactsContent.text += "\n" + gravityForceResult;
+
         planetPanel.SetActive(true);
     }
 
@@ -104,19 +108,21 @@ public class PlanetPanel : MonoBehaviour {
     public void OnApply() {
         if(activePlanet == null) return;
 
-        float newMass;
         float newRadius;
-
-        if(float.TryParse(massInput.text, out newMass) && float.TryParse(radiusInput.text, out newRadius)) activePlanet.ApplyChanges(newMass, newRadius);
+        if(float.TryParse(radiusInput.text, out newRadius)) activePlanet.ApplyChanges(newRadius);
     }
 
     public void OnRotate() {
         if(activePlanet == null) return;
         
         string[] directionArray = { "up", "right", "forward" };
-            
-        int index = UnityEngine.Random.Range(0, directionArray.Length);
-        string newDirection = directionArray[index];
+        string newDirection;
+        
+        // While is used here to prevent the same direction.
+        do {
+            int index = UnityEngine.Random.Range(0, directionArray.Length);
+            newDirection = directionArray[index];
+        } while (newDirection == activePlanet.direction);
 
         activePlanet.direction = newDirection;
     }

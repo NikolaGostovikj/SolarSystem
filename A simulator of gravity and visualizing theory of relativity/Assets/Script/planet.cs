@@ -1,48 +1,68 @@
 using UnityEngine;
+using System.Collections.Generic;
 
-public class Planet : MonoBehaviour
-{
+public class Planet : MonoBehaviour {
     public string name;
     public ParticleSystem particles;
 
-    public float mass = 1000f; //measure mass
     public float radius;
+    public Vector3 position;
 
-    private float selfRotationSpeed = 10f;
-    
     public string direction = "up";
-    private Vector3 vectorDirection;
+    private float selfRotationSpeed = 25f;
     
-    public float gravityForce(Planet planet){
+    public string GravityForce(Planet planet, string[] solarSystemPlanets) {
         float G = 0.6674f;
-        float distance = Vector3.Distance(transform.position, planet.transform.position);//one is the other planet, other is this
-        //Eucledian distance between two planets d = sqrt( (x2-x1)^2 + (y2-y1)^2 + (z2-z1)^2 )
-        if(distance == 0f){
-            return 0f; //division by 0
+        string result = "Gravitational forces from " + planet.name + ":\n";
+
+        Dictionary<string, float> masses = new Dictionary<string, float> {
+            { "Sun", 1988500f },
+            { "Mercury", 0.330f },
+            { "Venus", 4.87f },
+            { "Earth", 5.97f },
+            { "Mars", 0.642f },
+            { "Jupiter", 1898f },
+            { "Saturn", 568f },
+            { "Uranus", 86.8f },
+            { "Neptune", 102f }
+        };
+
+        Dictionary<string, float> positions = new Dictionary<string, float> {
+            { "Sun", 0f },
+            { "Mercury", 57.9f },
+            { "Venus", 108.2f },
+            { "Earth", 149.6f },
+            { "Mars", 227.9f },
+            { "Jupiter", 778.3f },
+            { "Saturn", 1427f },
+            { "Uranus", 2871f },
+            { "Neptune", 4497.1f }
+        };
+
+        foreach (string solarSystemPlanet in solarSystemPlanets) {
+            if (solarSystemPlanet == planet.name) continue;
+
+            float distance = Mathf.Abs(positions[planet.name] - positions[solarSystemPlanet]);
+            float force = G * (masses[planet.name] * masses[solarSystemPlanet]) / (distance * distance);
+
+            result += $"- {solarSystemPlanet}: {force:F4} units\n";
         }
 
-        //formula for force -> F = G * (m1 * m2) / r^2 
-        float force = G * (mass * planet.mass) / (distance * distance);
-        return force;
+        return result;
     }
 
-    public void ApplyChanges(float newMass, float newRadius) {
-        mass = newMass;
+    public void ApplyChanges(float newRadius) {
         radius = newRadius;
-
         transform.localScale = Vector3.one * radius * 2f;
-
-        Rigidbody rb = GetComponent<Rigidbody>();
-        if (rb != null) rb.mass = mass;
     }
 
-    void Start(){
+    void Start() {
         radius = transform.localScale.x / 2f;
-        vectorDirection = direction == "up" ? Vector3.up : direction == "right" ? Vector3.right : Vector3.forward;
+        position = direction == "up" ? Vector3.up : direction == "right" ? Vector3.right : Vector3.forward;
     }
 
     void Update() {
-        vectorDirection = direction == "up" ? Vector3.up : direction == "right" ? Vector3.right : Vector3.forward;
-        transform.Rotate(vectorDirection * selfRotationSpeed * Time.deltaTime);
+        position = direction == "up" ? Vector3.up : direction == "right" ? Vector3.right : Vector3.forward;
+        transform.Rotate(position * selfRotationSpeed * Time.deltaTime);
     }
 }
