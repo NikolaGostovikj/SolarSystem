@@ -3,6 +3,7 @@
 ## Gravity Simulator.apk
 
 The *Gravity Simulator.apk* file is included in the project repository. This is the Android application binary for our Android application.
+Video demonstrating the application: https://www.youtube.com/watch?v=YAlRoof5poQ
 
 ### Requirements
 
