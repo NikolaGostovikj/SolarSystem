@@ -8,7 +8,7 @@ public class Planet : MonoBehaviour
     public float mass = 1000f; //measure mass
     public float radius;
 
-    private float selfRotationSpeed = 50f;
+    private float selfRotationSpeed = 10f;
     
     public string direction = "up";
     private Vector3 vectorDirection;
