@@ -1,3 +1,8 @@
+# 🌌 Solar System Simulation
+
+This is a 3D simulation of the Solar System built with **Unity** and **C# scripting**. The project demonstrates the motion of planets orbiting the Sun and rotating around their axes using physics-based logic. It was created as an educational tool to explore celestial mechanics and Unity game development techniques. It's a mobile AR application and has it's own plane detection. 
+
+
 # Gravity Simulator - Startup Instructions
 
 ## Gravity Simulator.apk
